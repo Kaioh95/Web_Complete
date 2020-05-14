@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+
+	<script type="text/javascript">
+
+		var listaFuncionarios = Array();
+
+		listaFuncionarios['x'] = 'Viviane';
+		listaFuncionarios[false] = 'Rosangela';
+		listaFuncionarios[3] = 'Miguel';
+		listaFuncionarios[27] = 'Lucas';
+		listaFuncionarios[-12] = 'Fernanda';
+
+		var f = function(valor, indice){
+			console.log(valor, indice);
+		};
+
+		listaFuncionarios.forEach(f);
+		/*
+		console.log(listaFuncionarios);
+		document.write(listaFuncionarios[3]);
+
+		listaFuncionarios.forEach(function(valor, indice, array){
+			console.log('indice ' + indice + ' | Valor: ' + valor);
+			if(valor == 'Lucas'){
+				array[indice] = 'Um novo valor'
+			}
+		});
+
+		console.log(listaFuncionarios);
+		document.write('<br>' + listaFuncionarios[3]);*/
+
+	</script>
+</head>
+
+<body>
+
+	<div>
+		
+	</div>
+
+</body>
+</html>

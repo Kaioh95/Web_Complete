@@ -1,0 +1,96 @@
+/*********************
+SELETORES************/
+
+/*
+ SELETOR UNIVERSAL
+
+*{
+	border: 1px dotted gray;
+}
+
+ SELETOR DE TEXTO
+
+h1{
+	color: #CCC;
+}
+
+ SELETOR DE CLASSE
+
+.verde{
+	color: green;
+}
+
+p.verde{
+	color: yellow;
+}
+
+ SELETOR DE ID
+
+#cabecalho{
+	text-align: center;
+}
+
+ SELETOR DE FILHO
+
+li>a{
+	color: red;
+	text-decoration: none;
+}
+
+ SELETOR DE DESCENDENTE
+
+div a{
+	color: pink;
+}
+
+ SELETOR DE ADJACENTE
+
+h1+p{
+	color: orange;
+}
+
+ SELETOR DE IRMAO GERAL
+
+h2~p{
+	color: orange;
+}
+*/
+
+/****************************
+HERANCAS E ESPECIFICACOES****
+
+/*border e background nao sao herdados
+body{
+	color: red;
+	border: 1px solid red;
+	background: gray;
+}
+*
+
+/*Se um seletor for mais especifico que outro
+ a regra mais especifica sera aplicada
+  (tera precedencia sobre regras mais gerais)*
+
+*{
+	color: red;
+}
+
+p{
+	color: gray;
+}
+
+h2{/*3*
+	color: blue;
+}
+
+h2#laranja{/*1*
+	color: orange;
+}
+
+h2.verde{/*2*
+	color: green;
+}/
+
+/**************************************
+BARRA DE NAVEGACAO VERTICAL************/
+

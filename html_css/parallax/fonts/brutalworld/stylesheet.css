@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Brutalworld';
+    src: url('Brutalworld.woff2') format('woff2'),
+        url('Brutalworld.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,34 @@
+/****************************
+HERANCAS E ESPECIFICACOES****
+
+/*border e background nao sao herdados
+body{
+	color: red;
+	border: 1px solid red;
+	background: gray;
+}
+*/
+
+/*Se um seletor for mais especifico que outro
+ a regra mais especifica sera aplicada
+  (tera precedencia sobre regras mais gerais)*/
+
+*{
+	color: red;
+}
+
+p{
+	color: gray;
+}
+
+h2{/*3*/
+	color: blue;
+}
+
+h2#laranja{/*1*/
+	color: orange;
+}
+
+h2.verde{/*2*/
+	color: green;
+}

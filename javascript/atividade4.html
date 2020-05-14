@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+
+	<script type="text/javascript">
+
+		/*let permite que você declare variáveis limitando seu escopo no bloco, instrução, ou em uma expressão na qual ela é usada. Isso é inverso da keyword var, que define uma variável globalmente ou no escopo inteiro de uma função, independentemente do escopo de bloco.*/
+		
+		function acionaCampo(){
+			document.getElementById('entrada').style.background = 'yellow';
+		}
+
+		function validaCampo(){
+			let str = document.getElementById('entrada').value;
+
+			if(str.length < 3){
+				document.getElementById('entrada').style.background = 'red';
+			}
+			else if(str.length >= 3){
+				document.getElementById('entrada').style.background = 'green';
+			}
+		}
+
+	</script>
+
+</head>
+
+<body>
+
+	<input type="text" onfocus="acionaCampo()" onblur="validaCampo()" id="entrada">
+
+</body>
+</htmlt

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<!-- Load Babel -->
+	<!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	
+	<!-- Your custom script here -->
+	<script type="text/babel">
+	
+		// Requisicao http
+		// Resposta http
+		let Bicicleta1 = {
+			cor: 'Branca',
+			marcha: 'unica',
+			aro: 12,
+			pedalar(){
+				console.log('Metodo pedalar executado');
+			}
+		}
+
+		let Bicicleta2 = {
+			cor: 'Vermelha',
+			marcha: '18',
+			aro: 26,
+			pedalar(){
+				console.log('Metodo pedalar executado');
+			}
+		}
+
+		console.log(Bicicleta1);
+		console.log(Bicicleta2);
+
+		//------------------------------------------
+		let BicicletaFactory = function(cor, marcha, aro){
+			//logico
+			//Requisicao http
+			//Resposta http
+			return{
+				cor,
+				marcha,
+				aro,
+				pedalar(){
+					console.log('Metodo pedalar executado');
+				}
+			}
+		};
+
+		let Bicicleta3 = BicicletaFactory('Vermelha', '18', 26);
+		let Bicicleta4 = BicicletaFactory('Preta', '21', 29);
+
+		console.log(Bicicleta4);
+		console.log(Bicicleta4.cor);
+		Bicicleta4.pedalar();
+
+	</script>
+</script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

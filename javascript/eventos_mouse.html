@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+
+	<script type="text/javascript">
+
+		function acao(){
+			alert('Evento disparado ao click');
+		}
+
+		function dbl(){
+			alert('Evento disparado ao click duplo');
+		}
+
+		function onmouse(){
+			alert('Evento disparado ao soltar o click');
+		}
+
+		function hover(){
+			alert('Evento disparado com mouse sobreposto');
+		}
+
+		function out(){
+			alert('Evento disparado quando mouse sai da area');
+		}
+
+	</script>
+</head>
+
+<body>
+	
+	<div 
+		onclick="acao()"
+		style="background: #ccc; height: 150px; width: 150px;">
+	</div>
+
+	<div 
+		ondblclick="dbl()"
+		style="background: red; height: 150px; width: 150px;">
+	</div>
+
+	<div 
+		onmouseup="onmouse()"
+		style="background: black; height: 150px; width: 150px;">
+	</div>
+
+	<div 
+		onmouseover="hover()"
+		style="background: purple; height: 150px; width: 150px;">
+	</div>
+
+	<div 
+		onmouseout="out()"
+		style="background: yellow; height: 150px; width: 150px;">
+	</div>
+
+	<div 
+		onclick="acao()"
+		onmouseout="out()"
+		style="background: green; height: 150px; width: 150px;">
+	</div>
+
+</body>
+</html>

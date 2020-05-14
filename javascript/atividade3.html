@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+
+	<script type="text/javascript">
+
+		var x = prompt('Digite um número:');
+		var op = prompt('Digite uma Operação (soma ou subtração):');
+		var y = prompt('Digite outro número:');
+
+		function caculo(x, y, op){
+			x = parseFloat(x);
+			y = parseFloat(y);
+			
+			switch (op){
+				case 'soma':
+					document.write('O resultado eh: ' + (x+y));
+					break;
+
+				case 'subtração':
+					document.write('O resultado eh: ' + (x-y));
+					break;
+
+				case '+':
+					document.write('O resultado eh: ' + (x+y));
+					break;
+
+				case '-':
+					document.write('O resultado eh: ' + (x-y));
+					break;
+
+				default:
+					document.write('Operação inválida!')
+			}
+		}
+
+		caculo(x, y, op);
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>

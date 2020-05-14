@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+
+	<script type="text/javascript">
+		/*
+		function calcularArea(largura, comprimento){
+			return largura*comprimento;
+		}
+
+		var largura = prompt('Digite a largura do terreno: ');
+		var comprimento = prompt('Digite o comprimento do terreno: ');
+
+		document.write(calcularArea(largura, comprimento));
+
+		function soma(a, b){
+			b = b === undefined? 0 : b;
+			return a+b;
+		}
+
+		console.log(soma(7, 7));
+		console.log(soma(7, 7, 9, 15));
+		console.log(soma(7));
+		console.log(soma());*/
+
+		function somaParamVar(){
+			var resultado = 0;
+			for(var i in arguments){
+				resultado += arguments[i];
+			}
+
+			return resultado;
+		}
+
+		console.log(somaParamVar(2, 3, 4.5, 0.5, 'Texto'));
+
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>
