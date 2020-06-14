@@ -1,0 +1,4 @@
+3#Erro de impressão#Impressora#Erro ao tentar imprimir
+4#Chamado Maria#Rede#Teste TEste TestE
+3#Chamado Jose#Software#Rapazzzz...
+4#Chamado Maria teste#Software#Deu certo

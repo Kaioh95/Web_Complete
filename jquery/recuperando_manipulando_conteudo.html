@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery</title>
+
+	<!--<script type="text/javascript" src="jquery-3.5.1.min.js"></script>-->
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(() => {
+
+			console.log('conteudo div 1:', $('#div1').html());
+
+			console.log('conteudo div 2:', $('#div2').html());
+
+			console.log('conteudo div 2:', $('#div2').html('<strong style="color: red;">Eu sou o valor novo.</strong>'));
+
+			console.log('conteudo div 1:', $('#div1').text('<strong style="color: red;">Eu sou o valor novo.</strong>'));
+				
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="div1" style="border: solid 1px #000; width: 150px; height: 150px;">
+		<a href="#">teste</a>
+		<p>Esse é outro teste</p>
+		texto
+		<p>Outro teste</p>
+	</div>
+
+	<div id="div2" style="border: solid 1px #000; width: 150px; height: 150px;">
+		Div 2
+	</div>
+
+</body>
+
+</html>
